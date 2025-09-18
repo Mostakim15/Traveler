@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load socialaccount %}
+{% load i18n %}
+
+{% block content %}
+{% csrf_token %}
+<div class="max-w-md mx-auto mt-10">
+  <div class="flex mb-6">
+    <button id="tab-login" class="flex-1 py-2 font-bold text-blue-600 border-b-4 border-blue-600 focus:outline-none cursor-pointer transition-all duration-200 hover:bg-blue-50 rounded-tl-2xl">Login</button>
+    <button id="tab-register" class="flex-1 py-2 font-bold text-green-600 border-b-4 border-transparent focus:outline-none cursor-pointer transition-all duration-200 hover:bg-green-50 rounded-tr-2xl">Register</button>
+  </div>
+  <!-- Login Section -->
+  {% csrf_token %}
+  <div id="section-login" class="bg-white rounded-lg shadow p-6">
+    <h2 class="text-xl font-bold mb-4 text-blue-700">Login</h2>
+    <a href="{% provider_login_url 'google' %}"
+       class="flex items-center gap-3 bg-white border-2 border-blue-400 shadow hover:shadow-lg rounded-xl px-4 py-2 text-blue-700 font-semibold text-base transition-all duration-200 hover:bg-blue-50 hover:text-blue-900 mb-4">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google" class="w-6 h-6"> 
+      Login with Google
+    </a>
+    <form method="post" action="{% url 'login' %}">
+      {% csrf_token %}
+      <input type="text" name="username" placeholder="Username" class="w-full border p-2 mb-4 rounded">
+      <input type="password" name="password" placeholder="Password" class="w-full border p-2 mb-4 rounded">
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded w-full">Login</button>
+    </form>
+  </div>
+  <!-- Registration Section -->
+  <div id="section-register" class="bg-white rounded-lg shadow p-6 hidden">
+    <h2 class="text-xl font-bold mb-4 text-green-700">Register</h2>
+    <a href="{% provider_login_url 'google' %}"
+       class="flex items-center gap-3 bg-white border-2 border-green-400 shadow hover:shadow-lg rounded-xl px-4 py-2 text-green-700 font-semibold text-base transition-all duration-200 hover:bg-green-50 hover:text-green-900 mb-4">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google" class="w-6 h-6"> 
+      Register with Google
+    </a>
+    <form method="post" action="{% url 'registration' %}">
+      {% csrf_token %}
+      <input type="text" name="username" placeholder="Username" class="w-full border p-2 mb-4 rounded">
+      <input type="email" name="email" placeholder="Email" class="w-full border p-2 mb-4 rounded">
+      <input type="password" name="password1" placeholder="Password" class="w-full border p-2 mb-4 rounded">
+      <input type="password" name="password2" placeholder="Confirm Password" class="w-full border p-2 mb-4 rounded">
+      <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded w-full">Register</button>
+    </form>
+  </div>
+</div>
+<script>
+  const tabLogin = document.getElementById('tab-login');
+  const tabRegister = document.getElementById('tab-register');
+  const sectionLogin = document.getElementById('section-login');
+  const sectionRegister = document.getElementById('section-register');
+  tabLogin.onclick = function() {
+    sectionLogin.classList.remove('hidden');
+    sectionRegister.classList.add('hidden');
+    tabLogin.classList.add('text-blue-600', 'border-blue-600');
+    tabLogin.classList.remove('text-green-600');
+    tabRegister.classList.remove('text-blue-600', 'border-blue-600');
+    tabRegister.classList.add('text-green-600');
+  };
+  tabRegister.onclick = function() {
+    sectionLogin.classList.add('hidden');
+    sectionRegister.classList.remove('hidden');
+    tabRegister.classList.add('text-blue-600', 'border-blue-600');
+    tabRegister.classList.remove('text-green-600');
+    tabLogin.classList.remove('text-blue-600', 'border-blue-600');
+    tabLogin.classList.add('text-green-600');
+  };
+</script>
+
+{% endblock %}

@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<section class="my-10">
+  <div class="w-full mx-auto bg-white rounded-2xl shadow-xl p-8 border-t-4 border-blue-400">
+    <div class="flex flex-col md:flex-row gap-8 items-center md:items-start">
+      <div class="w-full md:w-1/2 flex-shrink-0 flex items-center justify-center">
+        {% if place.image %}
+          <img src="{{ place.image.url }}" alt="{{ place.name }}" class="w-full max-w-md h-64 object-cover rounded-2xl shadow-lg mb-4 md:mb-0">
+        {% else %}
+          <div class="w-full max-w-md h-64 flex items-center justify-center bg-blue-50 rounded-2xl text-blue-300 text-6xl mb-4 md:mb-0">🗺️</div>
+        {% endif %}
+      </div>
+      <div class="w-full md:w-1/2 flex flex-col">
+        <h2 class="text-4xl font-extrabold mb-2" style="color:#94cef2">{{ place.name }}</h2>
+        <div class="text-gray-500 mb-2">{{ place.city }}, {{ place.country }}</div>
+        <p class="text-gray-700 mb-4" id="place-desc">
+          {{ place.description|truncatewords:40 }}
+          {% if place.description|length > 300 %}
+            <span id="desc-ellipsis">...</span>
+            <span id="desc-more" style="display:none;">{{ place.description|safe }}</span>
+            <button type="button" id="desc-toggle" class="text-blue-500 underline ml-2">{% trans "Read more" %}</button>
+          {% endif %}
+        </p>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var toggle = document.getElementById('desc-toggle');
+    if (toggle) {
+      toggle.addEventListener('click', function() {
+        var more = document.getElementById('desc-more');
+        var ellipsis = document.getElementById('desc-ellipsis');
+        if (more.style.display === 'none') {
+          more.style.display = 'inline';
+          ellipsis.style.display = 'none';
+          toggle.textContent = '{% trans "Show less" %}';
+        } else {
+          more.style.display = 'none';
+          ellipsis.style.display = 'inline';
+          toggle.textContent = '{% trans "Read more" %}';
+        }
+      });
+    }
+  });
+</script>
+        <div class="mb-4 text-sm text-gray-500">
+          <span class="font-semibold">{% trans "Latitude:" %}</span> {{ place.latitude }}<br>
+          <span class="font-semibold">{% trans "Longitude:" %}</span> {{ place.longitude }}
+        </div>
+        <a href="{% url 'tourist_places' %}" class="inline-block text-blue-500 hover:underline font-semibold">{% trans "← Back to all tourist places" %}</a>
+      </div>
+    </div>
+    </div>
+    <div id="place-map" class="w-full h-64 rounded-xl shadow mt-8 mb-8"></div>
+
+    {% if sub_places %}
+  <h3 class="text-2xl font-bold mb-4 mt-8" style="color:#94cef2">{% trans "Sub Tourist Places" %}</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      {% for t_p in sub_places %}
+        <a href="{% url 'tourist_place_detail' t_p.id %}" class="group flex justify-center">
+          <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col h-[420px] w-full max-w-xs border border-blue-100 hover:border-blue-400 hover:shadow-2xl transition-all duration-200 relative overflow-hidden">
+            {% if t_p.image %}
+              <img src="{{ t_p.image.url }}" alt="{{ t_p.name }}" class="w-full h-44 object-cover rounded-xl mb-3 group-hover:scale-105 transition-transform duration-200">
+            {% else %}
+              <div class="w-full h-44 flex items-center justify-center bg-blue-50 rounded-xl mb-3 text-blue-300 text-6xl">🗺️</div>
+            {% endif %}
+            <h3 class="text-lg font-bold text-blue-700 mb-1 truncate">{{ t_p.name }}</h3>
+            <p class="text-gray-600 text-sm flex-grow">{{ t_p.description|truncatewords:20 }}</p>
+            <span class="absolute top-3 right-3 bg-blue-100 text-blue-600 text-xs font-semibold px-3 py-1 rounded-full shadow group-hover:bg-blue-500 group-hover:text-white transition">{% trans "Sub Place" %}</span>
+            <span class="mt-3 text-blue-500 font-semibold text-sm group-hover:underline">{% trans "View Details →" %}</span>
+          </div>
+        </a>
+      {% empty %}
+  <p class="col-span-3 text-center text-gray-500">{% trans "No sub tourist places found." %}</p>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var map = L.map('place-map').setView([{{ place.latitude }}, {{ place.longitude }}], 12);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 18,
+      attribution: '\u00a9 OpenStreetMap contributors'
+    }).addTo(map);
+    L.marker([{{ place.latitude }}, {{ place.longitude }}]).addTo(map)
+      .bindPopup('<strong>{{ place.name|escapejs }}</strong><br>{{ place.city }}, {{ place.country }}').openPopup();
+  });
+</script>
+{% endblock %}

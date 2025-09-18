@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+  <div class="max-w-md mx-auto bg-white p-6 rounded shadow text-center mt-10">
+    <h2 class="text-xl font-bold mb-4">Delete Destination</h2>
+    <p>Are you sure you want to delete <strong>{{ destination.name }}</strong>?</p>
+    <form method="post">
+      {% csrf_token %}
+      <button type="submit" class="bg-red-600 text-white px-4 py-2 rounded mt-4">Yes, Delete</button>
+      <a href="{% url 'home' %}" class="ml-4 text-blue-500 underline">Cancel</a>
+    </form>
+  </div>
+{% endblock %}

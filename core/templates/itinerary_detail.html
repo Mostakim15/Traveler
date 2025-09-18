@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+<section class="my-10">
+  <div class="max-w-3xl mx-auto">
+    <div class="bg-white rounded-2xl shadow-xl p-8 border-t-4 border-blue-400 mb-8">
+      <h1 class="text-3xl font-extrabold mb-2 text-blue-700 tracking-tight">{{ itinerary.name }}</h1>
+      <div class="text-gray-500 mb-2">{{ itinerary.start_date }}{% if itinerary.end_date %} - {{ itinerary.end_date }}{% endif %}</div>
+      {% if itinerary.notes %}<div class="text-gray-700 mb-4">{{ itinerary.notes }}</div>{% endif %}
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+      <div>
+        <div class="flex justify-between items-center mb-3">
+          <h2 class="text-xl font-bold text-yellow-700">Hotels</h2>
+          <a href="{% url 'hotel_add' itinerary.pk %}" class="bg-gradient-to-r from-yellow-400 to-yellow-600 hover:from-yellow-500 hover:to-yellow-700 text-white px-4 py-1 rounded-full font-bold shadow transition-all">+ Add Hotel</a>
+        </div>
+        {% if hotels %}
+          <ul class="space-y-3">
+            {% for hotel in hotels %}
+              <li class="bg-yellow-50 border-l-4 border-yellow-400 rounded-lg p-4 shadow flex flex-col">
+                <span class="font-semibold text-lg">{{ hotel.name }}</span>
+                <span class="text-gray-500 text-sm">{{ hotel.check_in }} - {{ hotel.check_out }}</span>
+                <span class="text-gray-600 text-sm">{{ hotel.address }}</span>
+                <span class="text-green-700 text-sm font-semibold">💵 {{ hotel.price_per_night|floatformat:2 }} BDT/night</span>
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="text-gray-600">No hotels added.</p>
+        {% endif %}
+      </div>
+      <div>
+        <div class="flex justify-between items-center mb-3">
+          <h2 class="text-xl font-bold text-blue-700">Activities</h2>
+          <a href="{% url 'activity_add' itinerary.pk %}" class="bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-700 text-white px-4 py-1 rounded-full font-bold shadow transition-all">+ Add Activity</a>
+        </div>
+        {% if activities %}
+          <ul class="space-y-3">
+            {% for activity in activities %}
+              <li class="bg-blue-50 border-l-4 border-blue-400 rounded-lg p-4 shadow flex flex-col">
+                <span class="font-semibold text-lg">{{ activity.name }}</span>
+                <span class="text-gray-500 text-sm">{{ activity.date }}{% if activity.time %} {{ activity.time }}{% endif %}</span>
+                {% if activity.location %}<span class="text-gray-600 text-sm">{{ activity.location }}</span>{% endif %}
+                {% if activity.notes %}<span class="text-xs text-gray-500 mt-1">{{ activity.notes }}</span>{% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="text-gray-600">No activities added.</p>
+        {% endif %}
+      </div>
+    </div>
+    <div class="mt-8">
+      <a href="{% url 'itinerary_list' %}" class="text-blue-500 hover:underline font-semibold">← Back to Itineraries</a>
+    </div>
+  </div>
+</section>
+  </div>
+</div>
+{% endblock %}

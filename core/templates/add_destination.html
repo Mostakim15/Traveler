@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+<section class="my-12">
+  <div class="max-w-xl mx-auto bg-[#1e293b]/80 border border-[#94cef2]/40 rounded-3xl shadow-2xl p-8">
+    <h2 class="text-3xl font-extrabold mb-6 text-[#94cef2] text-center tracking-tight">{% trans "Add New Destination" %}</h2>
+    <form method="post" class="space-y-6">
+      {% csrf_token %}
+      {{ form.non_field_errors }}
+      {% for field in form %}
+        <div>
+          <label class="block text-[#94cef2] font-semibold mb-1">{{ field.label }}</label>
+          {{ field }}
+          {% if field.errors %}
+            <div class="text-red-400 text-xs mt-1">{{ field.errors|striptags }}</div>
+          {% endif %}
+        </div>
+      {% endfor %}
+      <div class="mb-2 text-sm text-[#94cef2]/80">Pick the location on the map below. The marker will set the destination's location automatically.</div>
+      <div id="map" class="w-full h-64 rounded-xl border-2 border-[#94cef2] mt-4"></div>
+      <input type="hidden" name="latitude" id="id_latitude" value="{{ form.latitude.value|default:'' }}">
+      <input type="hidden" name="longitude" id="id_longitude" value="{{ form.longitude.value|default:'' }}">
+      <button type="submit" class="w-full bg-[#94cef2] text-[#0f172a] py-2 rounded-xl font-bold shadow-lg hover:bg-[#60a5fa] transition-all duration-200 transform hover:scale-105">
+        Add Destination
+      </button>
+    </form>
+  </div>
+</section>
+
+<script>
+  function initMap() {
+    const defaultLocation = { lat: 23.8103, lng: 90.4125 }; // ঢাকা as default
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 6,
+      center: defaultLocation,
+      mapTypeId: "roadmap", // চাইলে satellite করতে পারো
+    });
+
+    const marker = new google.maps.Marker({
+      position: defaultLocation,
+      map: map,
+      draggable: true,
+    });
+
+    // Update hidden fields when marker moved
+    google.maps.event.addListener(marker, 'dragend', function (event) {
+      document.getElementById("id_latitude").value = event.latLng.lat();
+      document.getElementById("id_longitude").value = event.latLng.lng();
+    });
+
+    // Auto detect user location
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function (position) {
+        const userLocation = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude,
+        };
+        map.setCenter(userLocation);
+        marker.setPosition(userLocation);
+        document.getElementById("id_latitude").value = userLocation.lat;
+        document.getElementById("id_longitude").value = userLocation.lng;
+      });
+    }
+  }
+</script>
+
+<!-- Google Maps API key -->
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>
+
+{% endblock %}

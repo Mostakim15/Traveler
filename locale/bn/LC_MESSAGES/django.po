@@ -1,0 +1,1546 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-18 17:54+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\core\templates\activity_form.html:6
+msgid "Add Activity"
+msgstr "একটি কার্যকলাপ যোগ করুন"
+
+#: .\core\templates\add_destination.html:7
+msgid "Add New Destination"
+msgstr "নতুন গন্তব্য যোগ করুন"
+
+#: .\core\templates\base.html:20 .\core\templates\base.html:69
+msgid "Travel Guide"
+msgstr ""
+
+#: .\core\templates\base.html:27 .\travel_duide_project\settings.py:133
+msgid "English"
+msgstr "ইংরেজি"
+
+#: .\core\templates\base.html:28 .\travel_duide_project\settings.py:134
+msgid "বাংলা"
+msgstr "বাংলা"
+
+#: .\core\templates\base.html:29 .\travel_duide_project\settings.py:135
+msgid "हिन्दी"
+msgstr "হিন্দি"
+
+#: .\core\templates\base.html:35
+#, fuzzy
+#| msgid "Add New Destination"
+msgid "+ Add Destination"
+msgstr "নতুন গন্তব্য যোগ করুন"
+
+#: .\core\templates\base.html:36
+#, python-format
+msgid "Welcome, %(user.username)s"
+msgstr ""
+
+#: .\core\templates\base.html:37
+msgid "Logout"
+msgstr ""
+
+#: .\core\templates\base.html:39
+msgid "Login"
+msgstr ""
+
+#: .\core\templates\base.html:71
+msgid "All rights reserved."
+msgstr ""
+
+#: .\core\templates\base.html:73
+msgid "Made with"
+msgstr ""
+
+#: .\core\templates\base.html:73
+msgid "for explorers"
+msgstr ""
+
+#: .\core\templates\destination_detail.html:7
+msgid "Transport Options"
+msgstr ""
+
+#: .\core\templates\destination_detail.html:14
+msgid "(est. for your location)"
+msgstr ""
+
+#: .\core\templates\destination_detail.html:21
+msgid "No transport options available for this destination."
+msgstr ""
+
+#: .\core\templates\destination_detail.html:25
+msgid "Hotels in this Destination"
+msgstr ""
+
+#: .\core\templates\destination_detail.html:34
+msgid "per night"
+msgstr ""
+
+#: .\core\templates\destination_detail.html:38
+msgid "No hotels found for this destination."
+msgstr ""
+
+#: .\core\templates\destination_detail.html:44
+#, fuzzy
+#| msgid "Syndication"
+msgid "Location:"
+msgstr "সিন্ডিকেশন"
+
+#: .\core\templates\destination_detail.html:46
+msgid "Distance from you:"
+msgstr ""
+
+#: .\core\templates\destination_detail.html:51
+msgid "Reviews"
+msgstr ""
+
+#: .\core\templates\destination_detail.html:59
+msgid "No reviews yet."
+msgstr ""
+
+#: .\core\templates\destination_detail.html:66
+msgid "Write a review..."
+msgstr ""
+
+#: .\core\templates\destination_detail.html:72
+msgid "Submit Review"
+msgstr ""
+
+#: .\core\templates\destination_detail.html:75
+msgid "You must"
+msgstr ""
+
+#: .\core\templates\destination_detail.html:75 .\core\templates\home.html:104
+#: .\core\templates\home.html:123
+msgid "login"
+msgstr ""
+
+#: .\core\templates\destination_detail.html:75
+msgid "to add a review."
+msgstr ""
+
+#: .\core\templates\home.html:5
+msgid "Welcome to Travel Guide"
+msgstr ""
+
+#: .\core\templates\home.html:9
+msgid "🌍 Explore on Map"
+msgstr ""
+
+#: .\core\templates\home.html:50
+msgid "🗺️ Tourist Places"
+msgstr ""
+
+#: .\core\templates\home.html:52
+msgid "Search places..."
+msgstr ""
+
+#: .\core\templates\home.html:56
+#, fuzzy
+#| msgid "March"
+msgid "Search"
+msgstr "মার্চ"
+
+#: .\core\templates\home.html:70
+msgid "Tourist Place"
+msgstr ""
+
+#: .\core\templates\home.html:71 .\core\templates\home.html:93
+#: .\core\templates\tourist_place_detail.html:42
+msgid "View Details →"
+msgstr ""
+
+#: .\core\templates\home.html:75
+msgid "No tourist places found."
+msgstr ""
+
+#: .\core\templates\home.html:82
+#, fuzzy
+#| msgid "Add New Destination"
+msgid "🌐 Destinations"
+msgstr "নতুন গন্তব্য যোগ করুন"
+
+#: .\core\templates\home.html:86
+msgid "My Itineraries"
+msgstr ""
+
+#: .\core\templates\home.html:96
+#: .\env\Lib\site-packages\django\forms\formsets.py:499
+msgid "Delete"
+msgstr "মুছুন"
+
+#: .\core\templates\home.html:101
+msgid "No destinations added yet."
+msgstr ""
+
+#: .\core\templates\home.html:104 .\core\templates\home.html:123
+msgid "Please"
+msgstr ""
+
+#: .\core\templates\home.html:104
+#, fuzzy
+#| msgid "Add New Destination"
+msgid "to view destinations."
+msgstr "নতুন গন্তব্য যোগ করুন"
+
+#: .\core\templates\home.html:111
+msgid "✨ Features"
+msgstr ""
+
+#: .\core\templates\home.html:116 .\core\templates\home.html:122
+msgid "Personal Itinerary"
+msgstr ""
+
+#: .\core\templates\home.html:117
+msgid "Plan and save your trips, hotels, and activities in one place."
+msgstr ""
+
+#: .\core\templates\home.html:123
+msgid "to view your personalized itinerary."
+msgstr ""
+
+#: .\core\templates\home.html:128
+msgid "Interactive Map"
+msgstr ""
+
+#: .\core\templates\home.html:129
+msgid ""
+"Explore destinations on a live map and find your next adventure visually."
+msgstr ""
+
+#: .\core\templates\home.html:133
+msgid "Traveler Reviews"
+msgstr ""
+
+#: .\core\templates\home.html:134
+msgid "Read and share reviews to help others make the best travel choices."
+msgstr ""
+
+#: .\core\templates\hotel_form.html:5
+msgid "Add Hotel"
+msgstr ""
+
+#: .\core\templates\hotel_form.html:9
+msgid "Save"
+msgstr ""
+
+#: .\core\templates\hotel_form.html:10
+msgid "Cancel"
+msgstr ""
+
+#: .\core\templates\tourist_place_detail.html:19
+msgid "Latitude:"
+msgstr ""
+
+#: .\core\templates\tourist_place_detail.html:20
+msgid "Longitude:"
+msgstr ""
+
+#: .\core\templates\tourist_place_detail.html:22
+msgid "← Back to all tourist places"
+msgstr ""
+
+#: .\core\templates\tourist_place_detail.html:29
+msgid "Sub Tourist Places"
+msgstr ""
+
+#: .\core\templates\tourist_place_detail.html:41
+msgid "Sub Place"
+msgstr ""
+
+#: .\core\templates\tourist_place_detail.html:46
+msgid "No sub tourist places found."
+msgstr ""
+
+#: .\env\Lib\site-packages\django\contrib\messages\apps.py:16
+msgid "Messages"
+msgstr "বার্তা"
+
+#: .\env\Lib\site-packages\django\contrib\sitemaps\apps.py:8
+msgid "Site Maps"
+msgstr "সাইটের মানচিত্র"
+
+#: .\env\Lib\site-packages\django\contrib\staticfiles\apps.py:9
+msgid "Static Files"
+msgstr "স্ট্যাটিক ফাইল"
+
+#: .\env\Lib\site-packages\django\contrib\syndication\apps.py:7
+msgid "Syndication"
+msgstr "সিন্ডিকেশন"
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: .\env\Lib\site-packages\django\core\paginator.py:30
+msgid "…"
+msgstr "…"
+
+#: .\env\Lib\site-packages\django\core\paginator.py:32
+msgid "That page number is not an integer"
+msgstr "সেই পৃষ্ঠার নম্বরটি কোনও পূর্ণসংখ্যা নয়"
+
+#: .\env\Lib\site-packages\django\core\paginator.py:33
+msgid "That page number is less than 1"
+msgstr "সেই পৃষ্ঠার নম্বরটি 1 এর চেয়ে কম"
+
+#: .\env\Lib\site-packages\django\core\paginator.py:34
+msgid "That page contains no results"
+msgstr "সেই পৃষ্ঠায় কোনও ফলাফল নেই"
+
+#: .\env\Lib\site-packages\django\core\validators.py:22
+msgid "Enter a valid value."
+msgstr "একটি বৈধ মান লিখুন।"
+
+#: .\env\Lib\site-packages\django\core\validators.py:70
+msgid "Enter a valid domain name."
+msgstr "একটি বৈধ ডোমেন নাম লিখুন।"
+
+#: .\env\Lib\site-packages\django\core\validators.py:153
+#: .\env\Lib\site-packages\django\forms\fields.py:775
+msgid "Enter a valid URL."
+msgstr "একটি বৈধ URL লিখুন।"
+
+#: .\env\Lib\site-packages\django\core\validators.py:200
+msgid "Enter a valid integer."
+msgstr "একটি বৈধ পূর্ণসংখ্যা লিখুন।"
+
+#: .\env\Lib\site-packages\django\core\validators.py:211
+msgid "Enter a valid email address."
+msgstr "একটি বৈধ ইমেল ঠিকানা লিখুন।"
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: .\env\Lib\site-packages\django\core\validators.py:289
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr "অক্ষর, সংখ্যা, আন্ডারস্কোর বা হাইফেন সমন্বিত একটি বৈধ \"স্লাগ\" লিখুন।"
+
+#: .\env\Lib\site-packages\django\core\validators.py:297
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+"ইউনিকোড অক্ষর, সংখ্যা, আন্ডারস্কোর বা হাইফেন সমন্বিত একটি বৈধ \"স্লাগ\" লিখুন।"
+
+#: .\env\Lib\site-packages\django\core\validators.py:309
+#: .\env\Lib\site-packages\django\core\validators.py:318
+#: .\env\Lib\site-packages\django\core\validators.py:332
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2220
+#, python-format
+msgid "Enter a valid %(protocol)s address."
+msgstr "একটি বৈধ %(প্রোটোকল) এর ঠিকানা লিখুন।"
+
+#: .\env\Lib\site-packages\django\core\validators.py:311
+msgid "IPv4"
+msgstr "আইপিভি 4"
+
+#: .\env\Lib\site-packages\django\core\validators.py:320
+#: .\env\Lib\site-packages\django\utils\ipv6.py:43
+msgid "IPv6"
+msgstr "আইপিভি 6"
+
+#: .\env\Lib\site-packages\django\core\validators.py:334
+msgid "IPv4 or IPv6"
+msgstr "আইপিভি 4 বা আইপিভি 6"
+
+#: .\env\Lib\site-packages\django\core\validators.py:375
+msgid "Enter only digits separated by commas."
+msgstr "কমা দ্বারা পৃথক করা কেবল অঙ্কগুলি প্রবেশ করান।"
+
+#: .\env\Lib\site-packages\django\core\validators.py:381
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr "নিশ্চিত করুন যে এই মানটি %(সীমা_মূল্য) এস (এটি %(শো_ভ্যালু) গুলি)।"
+
+#: .\env\Lib\site-packages\django\core\validators.py:416
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr ""
+"নিশ্চিত করুন যে এই মানটি %এর চেয়ে কম বা সমান (সীমা_মূল্য) s এর চেয়ে কম বা সমান।"
+
+#: .\env\Lib\site-packages\django\core\validators.py:425
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr ""
+"নিশ্চিত করুন যে এই মানটি %এর চেয়ে বেশি বা সমান (সীমা_মূল্য) s এর চেয়ে বেশি বা "
+"সমান।"
+
+#: .\env\Lib\site-packages\django\core\validators.py:434
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr "নিশ্চিত করুন যে এই মানটি ধাপের আকারের %(সীমাবদ্ধ_ভালু) এর একাধিক।"
+
+#: .\env\Lib\site-packages\django\core\validators.py:441
+#, python-format
+msgid ""
+"Ensure this value is a multiple of step size %(limit_value)s, starting from "
+"%(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
+msgstr ""
+"নিশ্চিত করুন যে এই মানটি %(অফসেট) এস থেকে শুরু করে ধাপের আকার %(সীমাবদ্ধ_ মূল্য) এর "
+"একাধিক, যেমন।%(অফসেট) এস, %(বৈধ_ভালু 1) এস, %(বৈধ_ভালু 2) এস এবং আরও অনেক কিছু।"
+
+#: .\env\Lib\site-packages\django\core\validators.py:473
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\django\core\validators.py:491
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\django\core\validators.py:514
+#: .\env\Lib\site-packages\django\forms\fields.py:366
+#: .\env\Lib\site-packages\django\forms\fields.py:405
+msgid "Enter a number."
+msgstr "একটি নম্বর লিখুন।"
+
+#: .\env\Lib\site-packages\django\core\validators.py:516
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\django\core\validators.py:521
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\django\core\validators.py:526
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\django\core\validators.py:597
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+"ফাইল এক্সটেনশন \"%(এক্সটেনশন) গুলি\" অনুমোদিত নয়।অনুমোদিত এক্সটেনশনগুলি হ'ল: "
+"%(অনুমোদিত_ এক্সটেনশনস) গুলি।"
+
+#: .\env\Lib\site-packages\django\core\validators.py:659
+msgid "Null characters are not allowed."
+msgstr "নাল চরিত্রগুলি অনুমোদিত নয়।"
+
+#: .\env\Lib\site-packages\django\db\models\base.py:1600
+#: .\env\Lib\site-packages\django\forms\models.py:908
+msgid "and"
+msgstr "এবং"
+
+#: .\env\Lib\site-packages\django\db\models\base.py:1602
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr "এই %(ফিল্ড_লাবেলস) এর সাথে %(মডেল_নাম) এর ইতিমধ্যে বিদ্যমান।"
+
+#: .\env\Lib\site-packages\django\db\models\constraints.py:22
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr "সীমাবদ্ধতা \"%(নাম) গুলি\" লঙ্ঘন করা হয়।"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:134
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr "মান %(মান) আর একটি বৈধ পছন্দ নয়।"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:135
+msgid "This field cannot be null."
+msgstr "এই ক্ষেত্রটি বাতিল হতে পারে না।"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:136
+msgid "This field cannot be blank."
+msgstr "এই ক্ষেত্রটি ফাঁকা হতে পারে না।"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:137
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr "এই %(ফিল্ড_লাবেল) এর সাথে %(মডেল_নাম) এর ইতিমধ্যে বিদ্যমান।"
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:141
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+"%(ফিল্ড_লাবেল) এস অবশ্যই %(তারিখ_ফিল্ড_লাবেল) এস %(লুকআপ_ টাইপ) এর জন্য অনন্য হতে "
+"হবে।"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:180
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr "প্রকারের ক্ষেত্র: %(ফিল্ড_ টাইপ) এস"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1162
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr "\"%(মান) গুলি\" মান অবশ্যই সত্য বা মিথ্যা হতে হবে।"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1163
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr "\"%(মান) গুলি\" মান অবশ্যই সত্য, মিথ্যা বা কোনওটিই হতে হবে।"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1165
+msgid "Boolean (Either True or False)"
+msgstr "বুলিয়ান (সত্য বা মিথ্যা)"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1215
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr "স্ট্রিং ( %পর্যন্ত (সর্বোচ্চ_ দৈর্ঘ্য) গুলি)"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1217
+msgid "String (unlimited)"
+msgstr "স্ট্রিং (সীমাহীন)"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1326
+msgid "Comma-separated integers"
+msgstr "কমা-বিচ্ছিন্ন পূর্ণসংখ্যা"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1427
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+"\"%(মান) গুলি\" মানের একটি অবৈধ তারিখের ফর্ম্যাট রয়েছে।এটি অবশ্যই yyyy-MM-DD "
+"ফর্ম্যাটে থাকতে হবে।"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1431
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1566
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+"\"%(মান) গুলি\" মানটির সঠিক ফর্ম্যাট রয়েছে (yyyy-MM-DD) তবে এটি একটি অবৈধ তারিখ।"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1435
+msgid "Date (without time)"
+msgstr "তারিখ (সময় ছাড়া)"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1562
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+msgstr ""
+"\"%(মান) গুলি\" মানের একটি অবৈধ বিন্যাস রয়েছে।এটি অবশ্যই yyyy-mm-dd hh: মিমি [: "
+"এসএস [.uuuuuu]] [টিজেড] ফর্ম্যাটে থাকতে হবে।"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1570
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+"\"%(মান) এস\" মানটির সঠিক ফর্ম্যাট রয়েছে (yyyy-MM-DD এইচএইচ: মিমি [: এসএস [."
+"uuuuuu]] [টিজেড]) তবে এটি একটি অবৈধ তারিখ/সময়।"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1575
+msgid "Date (with time)"
+msgstr "তারিখ (সময়ের সাথে)"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1702
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr "\"%(মান) গুলি\" মান অবশ্যই দশমিক সংখ্যা হতে হবে।"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1704
+msgid "Decimal number"
+msgstr "দশমিক সংখ্যা"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1864
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
+"uuuuuu] format."
+msgstr ""
+"\"%(মান) গুলি\" মানের একটি অবৈধ বিন্যাস রয়েছে।এটি অবশ্যই [ডিডি] [[এইচএইচ:] "
+"মিমি:] এসএস [.uuuuu] ফর্ম্যাটে থাকতে হবে।"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1868
+msgid "Duration"
+msgstr "সময়কাল"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1920
+msgid "Email address"
+msgstr "ইমেল ঠিকানা"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1945
+msgid "File path"
+msgstr "ফাইল পাথ"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2023
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr "\"%(মান) গুলি\" মান অবশ্যই একটি ভাসমান হতে হবে।"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2025
+msgid "Floating point number"
+msgstr "ভাসমান পয়েন্ট নম্বর"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2065
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr "\"%(মান) গুলি\" মান অবশ্যই একটি পূর্ণসংখ্যা হতে হবে।"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2067
+msgid "Integer"
+msgstr "পূর্ণসংখ্যা"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2163
+msgid "Big (8 byte) integer"
+msgstr "বড় (8 বাইট) পূর্ণসংখ্যা"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2180
+msgid "Small integer"
+msgstr "ছোট পূর্ণসংখ্যা"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2188
+msgid "IPv4 address"
+msgstr "আইপিভি 4 ঠিকানা"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2219
+msgid "IP address"
+msgstr "আইপি ঠিকানা"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2310
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2311
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr "\"%(মান) গুলি\" মান অবশ্যই সত্য বা মিথ্যা নয়।"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2313
+msgid "Boolean (Either True, False or None)"
+msgstr "বুলিয়ান (সত্য, মিথ্যা বা কিছুই নয়)"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2364
+msgid "Positive big integer"
+msgstr "ইতিবাচক বড় পূর্ণসংখ্যা"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2379
+msgid "Positive integer"
+msgstr "ইতিবাচক পূর্ণসংখ্যা"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2394
+msgid "Positive small integer"
+msgstr "ইতিবাচক ছোট পূর্ণসংখ্যা"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2410
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr "স্লাগ ( %পর্যন্ত (সর্বোচ্চ_ দৈর্ঘ্য) গুলি)"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2446
+msgid "Text"
+msgstr "পাঠ্য"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2526
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+"\"%(মান) গুলি\" মানের একটি অবৈধ বিন্যাস রয়েছে।এটি অবশ্যই এইচএইচ: মিমি [: এসএস [."
+"uuuuu]] ফর্ম্যাটে থাকতে হবে।"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2530
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+"\"%(মান) গুলি\" মানটির সঠিক ফর্ম্যাট রয়েছে (এইচএইচ: মিমি [: এসএস [.uuuuuu]]]) "
+"তবে এটি একটি অবৈধ সময়।"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2534
+msgid "Time"
+msgstr "সময়"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2642
+msgid "URL"
+msgstr "Url"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2666
+msgid "Raw binary data"
+msgstr "কাঁচা বাইনারি ডেটা"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2731
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr "\"%(মান) গুলি\" কোনও বৈধ ইউআইডি নয়।"
+
+#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2733
+msgid "Universally unique identifier"
+msgstr "সর্বজনীন অনন্য শনাক্তকারী"
+
+#: .\env\Lib\site-packages\django\db\models\fields\files.py:244
+msgid "File"
+msgstr "ফাইল"
+
+#: .\env\Lib\site-packages\django\db\models\fields\files.py:420
+msgid "Image"
+msgstr "চিত্র"
+
+#: .\env\Lib\site-packages\django\db\models\fields\json.py:24
+msgid "A JSON object"
+msgstr "একটি জসন অবজেক্ট"
+
+#: .\env\Lib\site-packages\django\db\models\fields\json.py:26
+msgid "Value must be valid JSON."
+msgstr "মান অবশ্যই বৈধ json হতে হবে।"
+
+#: .\env\Lib\site-packages\django\db\models\fields\related.py:979
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r is not a valid choice."
+msgstr "%(মডেল) এর উদাহরণ %(ক্ষেত্র) এস %(মান) আর সহ কোনও বৈধ পছন্দ নয়।"
+
+#: .\env\Lib\site-packages\django\db\models\fields\related.py:982
+msgid "Foreign Key (type determined by related field)"
+msgstr "বিদেশী কী (সম্পর্কিত ক্ষেত্র দ্বারা নির্ধারিত প্রকার)"
+
+#: .\env\Lib\site-packages\django\db\models\fields\related.py:1276
+msgid "One-to-one relationship"
+msgstr "এক-এক সম্পর্ক"
+
+#: .\env\Lib\site-packages\django\db\models\fields\related.py:1333
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr "%(থেকে) এস-%(থেকে) এর সম্পর্ক"
+
+#: .\env\Lib\site-packages\django\db\models\fields\related.py:1335
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr "%(থেকে) এস-%(থেকে) এর সম্পর্ক"
+
+#: .\env\Lib\site-packages\django\db\models\fields\related.py:1383
+msgid "Many-to-many relationship"
+msgstr "অনেক থেকে অনেক সম্পর্ক"
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: .\env\Lib\site-packages\django\forms\boundfield.py:185
+msgid ":?.!"
+msgstr ":?!!"
+
+#: .\env\Lib\site-packages\django\forms\fields.py:95
+msgid "This field is required."
+msgstr "এই ক্ষেত্র প্রয়োজন।"
+
+#: .\env\Lib\site-packages\django\forms\fields.py:315
+msgid "Enter a whole number."
+msgstr "একটি সম্পূর্ণ সংখ্যা লিখুন।"
+
+#: .\env\Lib\site-packages\django\forms\fields.py:486
+#: .\env\Lib\site-packages\django\forms\fields.py:1267
+msgid "Enter a valid date."
+msgstr "একটি বৈধ তারিখ লিখুন।"
+
+#: .\env\Lib\site-packages\django\forms\fields.py:509
+#: .\env\Lib\site-packages\django\forms\fields.py:1268
+msgid "Enter a valid time."
+msgstr "একটি বৈধ সময় লিখুন।"
+
+#: .\env\Lib\site-packages\django\forms\fields.py:536
+msgid "Enter a valid date/time."
+msgstr "একটি বৈধ তারিখ/সময় লিখুন।"
+
+#: .\env\Lib\site-packages\django\forms\fields.py:570
+msgid "Enter a valid duration."
+msgstr "একটি বৈধ সময়কাল লিখুন।"
+
+#: .\env\Lib\site-packages\django\forms\fields.py:571
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr "দিনের সংখ্যা অবশ্যই {min_days} এবং {সর্বাধিক_ডেস} এর মধ্যে থাকতে হবে}"
+
+#: .\env\Lib\site-packages\django\forms\fields.py:640
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr "কোনও ফাইল জমা দেওয়া হয়নি।ফর্মটিতে এনকোডিং প্রকারটি পরীক্ষা করুন।"
+
+#: .\env\Lib\site-packages\django\forms\fields.py:641
+msgid "No file was submitted."
+msgstr "কোনও ফাইল জমা দেওয়া হয়নি।"
+
+#: .\env\Lib\site-packages\django\forms\fields.py:642
+msgid "The submitted file is empty."
+msgstr "জমা দেওয়া ফাইলটি খালি।"
+
+#: .\env\Lib\site-packages\django\forms\fields.py:644
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\django\forms\fields.py:649
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr "হয় হয় একটি ফাইল জমা দিন বা উভয়ই নয়, ক্লিয়ার চেকবক্সটি পরীক্ষা করুন।"
+
+#: .\env\Lib\site-packages\django\forms\fields.py:717
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+"একটি বৈধ চিত্র আপলোড করুন।আপনি যে ফাইলটি আপলোড করেছেন তা হয় কোনও চিত্র বা দূষিত "
+"চিত্র নয়।"
+
+#: .\env\Lib\site-packages\django\forms\fields.py:889
+#: .\env\Lib\site-packages\django\forms\fields.py:975
+#: .\env\Lib\site-packages\django\forms\models.py:1592
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr "একটি বৈধ পছন্দ নির্বাচন করুন।%(মান) গুলি উপলভ্য পছন্দগুলির মধ্যে একটি নয়।"
+
+#: .\env\Lib\site-packages\django\forms\fields.py:977
+#: .\env\Lib\site-packages\django\forms\fields.py:1096
+#: .\env\Lib\site-packages\django\forms\models.py:1590
+msgid "Enter a list of values."
+msgstr "মানগুলির একটি তালিকা লিখুন।"
+
+#: .\env\Lib\site-packages\django\forms\fields.py:1097
+msgid "Enter a complete value."
+msgstr "একটি সম্পূর্ণ মান লিখুন।"
+
+#: .\env\Lib\site-packages\django\forms\fields.py:1339
+msgid "Enter a valid UUID."
+msgstr "একটি বৈধ uuid লিখুন।"
+
+#: .\env\Lib\site-packages\django\forms\fields.py:1369
+msgid "Enter a valid JSON."
+msgstr "একটি বৈধ JSON লিখুন।"
+
+#. Translators: This is the default suffix added to form field labels
+#: .\env\Lib\site-packages\django\forms\forms.py:97
+msgid ":"
+msgstr "::"
+
+#: .\env\Lib\site-packages\django\forms\forms.py:239
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr "(লুকানো ক্ষেত্র %(নাম) গুলি) %(ত্রুটি) গুলি"
+
+#: .\env\Lib\site-packages\django\forms\formsets.py:61
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr ""
+"ম্যানেজমেন্টফর্মের ডেটা অনুপস্থিত বা এর সাথে হস্তক্ষেপ করা হয়েছে।অনুপস্থিত ক্ষেত্রগুলি: "
+"%(ফিল্ড_নাম) এস।সমস্যাটি অব্যাহত থাকলে আপনার বাগ রিপোর্ট ফাইল করতে হবে।"
+
+#: .\env\Lib\site-packages\django\forms\formsets.py:65
+#, python-format
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\django\forms\formsets.py:70
+#, python-format
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\django\forms\formsets.py:484
+#: .\env\Lib\site-packages\django\forms\formsets.py:491
+msgid "Order"
+msgstr "অর্ডার"
+
+#: .\env\Lib\site-packages\django\forms\models.py:901
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr "%(ক্ষেত্র) এর জন্য সদৃশ ডেটা সংশোধন করুন।"
+
+#: .\env\Lib\site-packages\django\forms\models.py:906
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr "%(ক্ষেত্র) এর জন্য সদৃশ ডেটা সংশোধন করুন, যা অবশ্যই অনন্য হতে হবে।"
+
+#: .\env\Lib\site-packages\django\forms\models.py:913
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+"%(ফিল্ড_নাম) এর জন্য সদৃশ ডেটা সংশোধন করুন যা %(তারিখ_ফিল্ড) এর মধ্যে %(অনুসন্ধান) "
+"এর জন্য অনন্য হতে হবে।"
+
+#: .\env\Lib\site-packages\django\forms\models.py:922
+msgid "Please correct the duplicate values below."
+msgstr "নীচে সদৃশ মানগুলি সংশোধন করুন।"
+
+#: .\env\Lib\site-packages\django\forms\models.py:1359
+msgid "The inline value did not match the parent instance."
+msgstr "ইনলাইন মান পিতামাতার উদাহরণের সাথে মেলে না।"
+
+#: .\env\Lib\site-packages\django\forms\models.py:1450
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr "একটি বৈধ পছন্দ নির্বাচন করুন।সেই পছন্দটি উপলভ্য পছন্দগুলির মধ্যে একটি নয়।"
+
+#: .\env\Lib\site-packages\django\forms\models.py:1594
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr "\"%(পিকে) গুলি\" কোনও বৈধ মান নয়।"
+
+#: .\env\Lib\site-packages\django\forms\utils.py:229
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+"%(ডেটটাইম) এস টাইম জোন %(বর্তমান_টাইমজোন) এর ব্যাখ্যা করা যায়নি;এটি অস্পষ্ট হতে "
+"পারে বা এটি বিদ্যমান নাও থাকতে পারে।"
+
+#: .\env\Lib\site-packages\django\forms\widgets.py:527
+msgid "Clear"
+msgstr "পরিষ্কার"
+
+#: .\env\Lib\site-packages\django\forms\widgets.py:528
+msgid "Currently"
+msgstr "বর্তমানে"
+
+#: .\env\Lib\site-packages\django\forms\widgets.py:529
+msgid "Change"
+msgstr "পরিবর্তন"
+
+#: .\env\Lib\site-packages\django\forms\widgets.py:866
+msgid "Unknown"
+msgstr "অজানা"
+
+#: .\env\Lib\site-packages\django\forms\widgets.py:867
+msgid "Yes"
+msgstr "হ্যাঁ"
+
+#: .\env\Lib\site-packages\django\forms\widgets.py:868
+msgid "No"
+msgstr "না"
+
+#. Translators: Please do not add spaces around commas.
+#: .\env\Lib\site-packages\django\template\defaultfilters.py:873
+msgid "yes,no,maybe"
+msgstr "হ্যাঁ, না, সম্ভবত"
+
+#: .\env\Lib\site-packages\django\template\defaultfilters.py:903
+#: .\env\Lib\site-packages\django\template\defaultfilters.py:920
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\django\template\defaultfilters.py:922
+#, python-format
+msgid "%s KB"
+msgstr "%এস কেবি"
+
+#: .\env\Lib\site-packages\django\template\defaultfilters.py:924
+#, python-format
+msgid "%s MB"
+msgstr "%এস এমবি"
+
+#: .\env\Lib\site-packages\django\template\defaultfilters.py:926
+#, python-format
+msgid "%s GB"
+msgstr "%এস জিবি"
+
+#: .\env\Lib\site-packages\django\template\defaultfilters.py:928
+#, python-format
+msgid "%s TB"
+msgstr "%s টিবি"
+
+#: .\env\Lib\site-packages\django\template\defaultfilters.py:930
+#, python-format
+msgid "%s PB"
+msgstr "%এস পিবি"
+
+#: .\env\Lib\site-packages\django\utils\dateformat.py:74
+msgid "p.m."
+msgstr "পি.এম."
+
+#: .\env\Lib\site-packages\django\utils\dateformat.py:75
+msgid "a.m."
+msgstr "এ।"
+
+#: .\env\Lib\site-packages\django\utils\dateformat.py:80
+msgid "PM"
+msgstr "প্রধানমন্ত্রী"
+
+#: .\env\Lib\site-packages\django\utils\dateformat.py:81
+msgid "AM"
+msgstr "আমি"
+
+#: .\env\Lib\site-packages\django\utils\dateformat.py:153
+msgid "midnight"
+msgstr "মধ্যরাত"
+
+#: .\env\Lib\site-packages\django\utils\dateformat.py:155
+msgid "noon"
+msgstr "দুপুর"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:7
+msgid "Monday"
+msgstr "সোমবার"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:8
+msgid "Tuesday"
+msgstr "মঙ্গলবার"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:9
+msgid "Wednesday"
+msgstr "বুধবার"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:10
+msgid "Thursday"
+msgstr "বৃহস্পতিবার"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:11
+msgid "Friday"
+msgstr "শুক্রবার"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:12
+msgid "Saturday"
+msgstr "শনিবার"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:13
+msgid "Sunday"
+msgstr "রবিবার"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:16
+msgid "Mon"
+msgstr "সোম"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:17
+msgid "Tue"
+msgstr "মঙ্গল"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:18
+msgid "Wed"
+msgstr "বিবাহ"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:19
+msgid "Thu"
+msgstr "থু"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:20
+msgid "Fri"
+msgstr "শুক্র"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:21
+msgid "Sat"
+msgstr "শনি"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:22
+msgid "Sun"
+msgstr "সূর্য"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:25
+msgid "January"
+msgstr "জানুয়ারী"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:26
+msgid "February"
+msgstr "ফেব্রুয়ারি"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:27
+msgid "March"
+msgstr "মার্চ"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:28
+msgid "April"
+msgstr "এপ্রিল"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:29
+msgid "May"
+msgstr "মে"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:30
+msgid "June"
+msgstr "জুন"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:31
+msgid "July"
+msgstr "জুলাই"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:32
+msgid "August"
+msgstr "আগস্ট"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:33
+msgid "September"
+msgstr "সেপ্টেম্বর"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:34
+msgid "October"
+msgstr "অক্টোবর"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:35
+msgid "November"
+msgstr "নভেম্বর"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:36
+msgid "December"
+msgstr "ডিসেম্বর"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:39
+msgid "jan"
+msgstr "জান"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:40
+msgid "feb"
+msgstr "ফেব্রুয়ারী"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:41
+msgid "mar"
+msgstr "মার"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:42
+msgid "apr"
+msgstr "এপ্রি"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:43
+msgid "may"
+msgstr "মে"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:44
+msgid "jun"
+msgstr "জুন"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:45
+msgid "jul"
+msgstr "জুলাই"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:46
+msgid "aug"
+msgstr "আগ"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:47
+msgid "sep"
+msgstr "সেপ্টেম্বর"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:48
+msgid "oct"
+msgstr "অক্টোবর"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:49
+msgid "nov"
+msgstr "নভ"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:50
+msgid "dec"
+msgstr "ডিসেম্বর"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:53
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr "জানু।"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:54
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr "ফেব্রুয়ারি"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:55
+msgctxt "abbrev. month"
+msgid "March"
+msgstr "মার্চ"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:56
+msgctxt "abbrev. month"
+msgid "April"
+msgstr "এপ্রিল"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:57
+msgctxt "abbrev. month"
+msgid "May"
+msgstr "মে"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:58
+msgctxt "abbrev. month"
+msgid "June"
+msgstr "জুন"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:59
+msgctxt "abbrev. month"
+msgid "July"
+msgstr "জুলাই"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:60
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr "আগস্ট"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:61
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr "সেপ্টেম্বর"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:62
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr "অক্টোবর"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:63
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr "নভেম্বর"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:64
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr "ডিসেম্বর"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:67
+msgctxt "alt. month"
+msgid "January"
+msgstr "জানুয়ারী"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:68
+msgctxt "alt. month"
+msgid "February"
+msgstr "ফেব্রুয়ারি"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:69
+msgctxt "alt. month"
+msgid "March"
+msgstr "মার্চ"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:70
+msgctxt "alt. month"
+msgid "April"
+msgstr "এপ্রিল"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:71
+msgctxt "alt. month"
+msgid "May"
+msgstr "মে"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:72
+msgctxt "alt. month"
+msgid "June"
+msgstr "জুন"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:73
+msgctxt "alt. month"
+msgid "July"
+msgstr "জুলাই"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:74
+msgctxt "alt. month"
+msgid "August"
+msgstr "আগস্ট"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:75
+msgctxt "alt. month"
+msgid "September"
+msgstr "সেপ্টেম্বর"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:76
+msgctxt "alt. month"
+msgid "October"
+msgstr "অক্টোবর"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:77
+msgctxt "alt. month"
+msgid "November"
+msgstr "নভেম্বর"
+
+#: .\env\Lib\site-packages\django\utils\dates.py:78
+msgctxt "alt. month"
+msgid "December"
+msgstr "ডিসেম্বর"
+
+#: .\env\Lib\site-packages\django\utils\ipv6.py:20
+msgid "This is not a valid IPv6 address."
+msgstr "এটি কোনও বৈধ আইপিভি 6 ঠিকানা নয়।"
+
+#: .\env\Lib\site-packages\django\utils\text.py:76
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr "%(কাটা_টেক্সট) এস…"
+
+#: .\env\Lib\site-packages\django\utils\text.py:287
+msgid "or"
+msgstr "বা"
+
+#. Translators: This string is used as a separator between list elements
+#: .\env\Lib\site-packages\django\utils\text.py:306
+#: .\env\Lib\site-packages\django\utils\timesince.py:135
+msgid ", "
+msgstr ","
+
+#: .\env\Lib\site-packages\django\utils\timesince.py:8
+#, python-format
+msgid "%(num)d year"
+msgid_plural "%(num)d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\django\utils\timesince.py:9
+#, python-format
+msgid "%(num)d month"
+msgid_plural "%(num)d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\django\utils\timesince.py:10
+#, python-format
+msgid "%(num)d week"
+msgid_plural "%(num)d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\django\utils\timesince.py:11
+#, python-format
+msgid "%(num)d day"
+msgid_plural "%(num)d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\django\utils\timesince.py:12
+#, python-format
+msgid "%(num)d hour"
+msgid_plural "%(num)d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\django\utils\timesince.py:13
+#, python-format
+msgid "%(num)d minute"
+msgid_plural "%(num)d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\django\views\csrf.py:29
+msgid "Forbidden"
+msgstr "নিষিদ্ধ"
+
+#: .\env\Lib\site-packages\django\views\csrf.py:30
+msgid "CSRF verification failed. Request aborted."
+msgstr "সিএসআরএফ যাচাইকরণ ব্যর্থ হয়েছে।অনুরোধ বাতিল।"
+
+#: .\env\Lib\site-packages\django\views\csrf.py:34
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+"আপনি এই বার্তাটি দেখছেন কারণ এই এইচটিটিপিএস সাইটে আপনার ওয়েব ব্রাউজার দ্বারা "
+"প্রেরণ করার জন্য একটি \"রেফারিং শিরোনাম\" প্রয়োজন, তবে কোনওটিই প্রেরণ করা হয়নি।"
+"আপনার ব্রাউজারটি তৃতীয় পক্ষের দ্বারা হাইজ্যাক করা হচ্ছে না তা নিশ্চিত করার জন্য "
+"সুরক্ষার কারণে এই শিরোনামটি প্রয়োজনীয়।"
+
+#: .\env\Lib\site-packages\django\views\csrf.py:40
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr ""
+"আপনি যদি \"রেফারার\" শিরোনামগুলি অক্ষম করতে আপনার ব্রাউজারটি কনফিগার করে থাকেন "
+"তবে দয়া করে তাদের কমপক্ষে এই সাইটের জন্য, বা এইচটিটিপিএস সংযোগের জন্য, বা \"একই-"
+"উত্স\" অনুরোধগুলির জন্য পুনরায় সক্ষম করুন।"
+
+#: .\env\Lib\site-packages\django\views\csrf.py:45
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a rel=\"noreferrer"
+"\" …> for links to third-party sites."
+msgstr ""
+"আপনি যদি <মেটা নাম = \"রেফারার\" সামগ্রী = \"নো-রেফারার\"> ট্যাগ ব্যবহার করছেন "
+"বা \"রেফারার-পলিসি: নো-রেফারার\" শিরোনাম সহ, দয়া করে সেগুলি সরান।সিএসআরএফ "
+"সুরক্ষা কঠোর রেফারার চেকিং করতে \"রেফারার\" শিরোনাম প্রয়োজন।আপনি যদি গোপনীয়তা "
+"সম্পর্কে উদ্বিগ্ন হন তবে তৃতীয় পক্ষের সাইটগুলির লিঙ্কগুলির জন্য <a rel = \"norefererer"
+"\"…> এর মতো বিকল্প ব্যবহার করুন।"
+
+#: .\env\Lib\site-packages\django\views\csrf.py:54
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+"আপনি এই বার্তাটি দেখছেন কারণ ফর্মগুলি জমা দেওয়ার সময় এই সাইটের একটি সিএসআরএফ "
+"কুকি প্রয়োজন।আপনার ব্রাউজারটি তৃতীয় পক্ষের দ্বারা হাইজ্যাক করা হচ্ছে না তা নিশ্চিত "
+"করার জন্য এই কুকিটি সুরক্ষার কারণে প্রয়োজনীয়।"
+
+#: .\env\Lib\site-packages\django\views\csrf.py:60
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr ""
+"আপনি যদি কুকিগুলি অক্ষম করতে আপনার ব্রাউজারটি কনফিগার করে থাকেন তবে দয়া করে এগুলি "
+"পুনরায় সক্ষম করুন, কমপক্ষে এই সাইটের জন্য বা \"একই-উত্স\" অনুরোধগুলির জন্য।"
+
+#: .\env\Lib\site-packages\django\views\csrf.py:66
+msgid "More information is available with DEBUG=True."
+msgstr "ডিবাগ = সত্যের সাথে আরও তথ্য উপলব্ধ।"
+
+#: .\env\Lib\site-packages\django\views\generic\dates.py:44
+msgid "No year specified"
+msgstr "কোন বছর নির্দিষ্ট করা হয়নি"
+
+#: .\env\Lib\site-packages\django\views\generic\dates.py:64
+#: .\env\Lib\site-packages\django\views\generic\dates.py:115
+#: .\env\Lib\site-packages\django\views\generic\dates.py:214
+msgid "Date out of range"
+msgstr "পরিসীমা ছাড়িয়ে যাওয়ার তারিখ"
+
+#: .\env\Lib\site-packages\django\views\generic\dates.py:94
+msgid "No month specified"
+msgstr "কোন মাস নির্দিষ্ট করা হয়নি"
+
+#: .\env\Lib\site-packages\django\views\generic\dates.py:147
+msgid "No day specified"
+msgstr "কোনও দিন নির্দিষ্ট করা হয়নি"
+
+#: .\env\Lib\site-packages\django\views\generic\dates.py:194
+msgid "No week specified"
+msgstr "কোন সপ্তাহ নির্দিষ্ট করা হয়নি"
+
+#: .\env\Lib\site-packages\django\views\generic\dates.py:353
+#: .\env\Lib\site-packages\django\views\generic\dates.py:384
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr "কোনও %(vervose_name_plural) এর উপলব্ধ নেই"
+
+#: .\env\Lib\site-packages\django\views\generic\dates.py:680
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
+"ভবিষ্যত %(vervose_name_plural) এর উপলভ্য নয় কারণ %(শ্রেণি_নাম) s.allow_future "
+"মিথ্যা।"
+
+#: .\env\Lib\site-packages\django\views\generic\dates.py:720
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr "অবৈধ তারিখের স্ট্রিং \"%(ডেটেস্টর) গুলি\" প্রদত্ত ফর্ম্যাট \"%(ফর্ম্যাট) গুলি\""
+
+#: .\env\Lib\site-packages\django\views\generic\detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr "কোনও %(ভার্বোজ_নাম) এর ক্যোয়ারির সাথে মিলছে না"
+
+#: .\env\Lib\site-packages\django\views\generic\list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr "পৃষ্ঠাটি \"শেষ\" নয়, এটি কোনও আইএনটিতে রূপান্তর করা যায় না।"
+
+#: .\env\Lib\site-packages\django\views\generic\list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr "অবৈধ পৃষ্ঠা ( %(পৃষ্ঠা_ সংখ্যা)): %(বার্তা) গুলি"
+
+#: .\env\Lib\site-packages\django\views\generic\list.py:173
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr "খালি তালিকা এবং \"%(শ্রেণি_নাম) s.allow_empty\" মিথ্যা।"
+
+#: .\env\Lib\site-packages\django\views\static.py:49
+msgid "Directory indexes are not allowed here."
+msgstr "ডিরেক্টরি সূচকগুলি এখানে অনুমোদিত নয়।"
+
+#: .\env\Lib\site-packages\django\views\static.py:51
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr "\"%(পাথ) এস\" এর অস্তিত্ব নেই"
+
+#: .\env\Lib\site-packages\django\views\static.py:68
+#: .\env\Lib\site-packages\django\views\templates\directory_index.html:8
+#: .\env\Lib\site-packages\django\views\templates\directory_index.html:11
+#, python-format
+msgid "Index of %(directory)s"
+msgstr "%(ডিরেক্টরি) এর সূচক"
+
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:7
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:204
+msgid "The install worked successfully! Congratulations!"
+msgstr "ইনস্টলটি সফলভাবে কাজ করেছে!অভিনন্দন!"
+
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+"দেখুন <a href = \"https://docs.djangoproject.com/en/%(versvers )s/releases/\" "
+"লক্ষ্য = \"_ ফাঁকা\" রিল = \"নুপেনার\"> জ্যাঙ্গো %(সংস্করণ) এর জন্য রিলিজ নোট </a>"
+
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:208
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
+"\">DEBUG=True</a> is in your settings file and you have not configured any "
+"URLs."
+msgstr ""
+"আপনি এই পৃষ্ঠাটি দেখছেন কারণ <a href = \"https://docs.djangoproject.com/en/"
+"%(vers/verse/ref/settings/#debug\" লক্ষ্য = \"_ ফাঁকা\" রিল = \"নুপেনার\"> ডিবাগ "
+"= সত্য </a> আপনার সেটিংস ফাইলটিতে রয়েছে এবং আপনি কোনও ইউআরএলএস কনফিগার করেন "
+"নি।"
+
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:217
+msgid "Django Documentation"
+msgstr "জ্যাঙ্গো ডকুমেন্টেশন"
+
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:218
+msgid "Topics, references, &amp; how-to’s"
+msgstr "বিষয়, রেফারেন্স, & amp;কিভাবে"
+
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:226
+msgid "Tutorial: A Polling App"
+msgstr "টিউটোরিয়াল: একটি পোলিং অ্যাপ"
+
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:227
+msgid "Get started with Django"
+msgstr "জ্যাঙ্গো দিয়ে শুরু করুন"
+
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:235
+msgid "Django Community"
+msgstr "জ্যাঙ্গো সম্প্রদায়"
+
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:236
+msgid "Connect, get help, or contribute"
+msgstr "সংযোগ করুন, সহায়তা করুন বা অবদান রাখুন"

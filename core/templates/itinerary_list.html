@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<section class="my-10">
+  <div class="max-w-4xl mx-auto">
+    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-8 gap-4">
+      <h1 class="text-3xl font-extrabold text-blue-700 tracking-tight">My Itineraries</h1>
+      <a href="{% url 'itinerary_create' %}" class="bg-gradient-to-r from-green-400 to-blue-400 hover:from-green-500 hover:to-blue-500 text-white px-6 py-2 rounded-full font-bold shadow transition-all">+ Add Itinerary</a>
+    </div>
+    {% if itineraries %}
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {% for itinerary in itineraries %}
+          <a href="{% url 'itinerary_detail' itinerary.pk %}" class="block transform hover:scale-105 transition">
+            <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col h-full border-t-4 border-blue-300">
+              <h2 class="text-2xl font-bold mb-2 text-blue-700">{{ itinerary.name }}</h2>
+              <div class="text-gray-500 text-sm mb-2">{{ itinerary.start_date }}{% if itinerary.end_date %} - {{ itinerary.end_date }}{% endif %}</div>
+              {% if itinerary.notes %}<div class="text-gray-700 text-sm mb-2">{{ itinerary.notes|truncatewords:15 }}</div>{% endif %}
+              <span class="inline-block mt-auto text-blue-500 font-semibold hover:underline">View Details →</span>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="text-gray-600">No itineraries yet. Start by adding one!</p>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}
