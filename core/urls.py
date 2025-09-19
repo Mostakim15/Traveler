@@ -1,6 +1,8 @@
 from django.urls import path
 from django.conf.urls.static import static
 from travel_duide_project import settings
+
+
 from . import views
 
 urlpatterns = [

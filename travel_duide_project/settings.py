@@ -1,5 +1,4 @@
 # Google Maps API Key (do not hardcode in templates)
-GOOGLE_MAPS_API_KEY = config("API_KEY", default="")
 """
 Django settings for travel_duide_project project.
 
@@ -14,6 +13,8 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 from decouple import config
+from django.utils.translation import gettext_lazy as _
+GOOGLE_MAPS_API_KEY = config("API_KEY", default="")
 
 SECRET_KEY = config("SECRET_KEY")
 DEBUG = config("DEBUG", default=False, cast=bool)
@@ -96,7 +97,6 @@ SOCIALACCOUNT_STORE_TOKENS = True
 ROOT_URLCONF = 'travel_duide_project.urls'
 
 # settings.py
-from django.conf import settings
 
 
 TEMPLATES = [
@@ -109,7 +109,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'travel_duide_project.settings.global_settings',  # Add this line
+                # Removed invalid global_settings context processor
             ],
         },
     },

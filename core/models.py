@@ -1,6 +1,9 @@
 from django.db import models
 from decimal import Decimal
 from django.contrib.auth.models import User
+from django.conf import settings
+
+
 
 # Personal Itinerary Models
 class Itinerary(models.Model):

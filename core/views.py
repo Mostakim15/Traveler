@@ -1,6 +1,5 @@
 import math
 
-from urllib3 import request
 # ------------------------
 # Distance Calculation Helper
 # ------------------------
@@ -14,7 +13,6 @@ from django.contrib.auth.models import User
 from django.views.decorators.http import require_POST
 from django.conf.urls.static import static
 from django.conf import settings
-
 from .models import (
     Destination, UserProfile, Review, Transport, TouristPlace,
     Itinerary, Hotel, Activity
@@ -67,7 +65,6 @@ def add_sub_tourist_place(request, parent_pk):
     return render(request, "add_sub_tourist_place.html", {"parent": parent})
 
 
-from django.utils.translation import gettext as _
 # ------------------------
 # Home Page
 # ------------------------
@@ -158,7 +155,6 @@ def destination_detail(request, pk):
         )
     else:
         hotels = Hotel.objects.filter(itinerary__name__icontains=destination.name)
-    from django.conf import settings
     return render(request, "destination_detail.html", {
         "destination": destination,
         "reviews": reviews,
